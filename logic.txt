@@ -1,0 +1,14 @@
+The logic routes of the site
+
+
+Meters:
+    Scarey Meter: 
+
+Scared decisions:
+    real life - more likely for job jumpscare 
+    3d - more likely for main horror games 
+    parents - more chance for one labeled parent SCARES
+    cringe - more likely for cringe 
+    movie - more movie jumpscares
+    k-pop - kpop jumpscare(i have no idea how to do tho)
+    anime - anime jumpscare
