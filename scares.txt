@@ -1,8 +1,11 @@
-Types of scares:
+Types of scares that are shown:
+    mp4/video jumpscare
+    png jumpscare
 
-classic jumpscare:
 
-png jumpscare
-
-shake screen/zoom or zoom out?
-screen flash as well 
+Extras that I may add?
+    shake screen
+    zoom in or out?
+    screen flashing
+    change screen color
+    extra sfx that gets added(like trumpts or smth)

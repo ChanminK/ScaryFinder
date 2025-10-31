@@ -1,8 +1,14 @@
 The logic routes of the site
 
+Either ask a question or show a jumpscare unexpectedly
 
 Meters:
-    Scarey Meter: 
+    Scarey Meter
+        based on how easily they are scared by each jumpscare they are exposed to 
+        ask a question(look at stuff below) 
+        or a random jumpscare is provided
+            then ask on scale 1-10 on how scared they were
+        random questions to make them think it does smth
 
 Scared decisions:
     real life - more likely for job jumpscare 
@@ -11,8 +17,12 @@ Scared decisions:
     cringe - more likely for cringe / anime 
     movie - more movie jumpscares
     k-pop - kpop jumpscare(i have no idea how to do tho)
-    cat - 
+    cat - just random cat thing
     dog -
     furry - 
     youtuber - likely to show youtuber jumpscares 
-    zach latta
+    zach latta scare(from the zach site idk where exactly it is)
+
+Final Scare:
+    The final scare that orhpeous decides will sacre you best
+    
