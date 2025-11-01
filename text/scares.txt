@@ -3,7 +3,7 @@ Types of scares that are shown:
     png jumpscare
 
 
-Extras that I may add?
+Extra effects that I may add?
     shake screen
     zoom in or out?
     screen flashing

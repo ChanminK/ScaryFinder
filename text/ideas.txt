@@ -1,0 +1,33 @@
+Okay basic akinator game web thingy where you can 
+guesss/take in answers to get the perfect scare that will
+scare them 
+
+MAKE THE AKINATOR BUT BE AN ORHPEOUS VERSION INSTEAD
+
+not sure about the language tho tbh 
+
+FIND OUT HOW AKINATOR WORKS
+    not sure what kinda databses it uses...
+    I mean gpt is saying that it uses a belief system that works based on a percentage
+
+Typescript + react for ui
+typescript for backend
+LETS DO THIS 
+
+
+Current scare json setup copy+paste:
+
+        {
+            "id": "",
+            "title": "",
+            "category": "",
+            "intensity": #,
+            "tags": [""],
+            "safetyFlags": [""],
+            "media": {
+                "poster": "assets/",
+                "jump": "assets/"
+            },
+            "contentWarnings": ["", ""],
+            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
+        },

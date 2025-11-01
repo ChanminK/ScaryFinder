@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "name": "SCARYFINDER",
+    "version": "0.1.0",
+    "defaultAnswerSet": ["Yes", "Probably", "Unknown", "ProbablyNot", "No"],
+    "intensityRange": [1, 10]
+    },
+
+    "tags": {
+        "modalities": ["audio_jump", "visual_jump", "tension_slow", "whisper", "dark_eyes", "mirror", "glitch", "surveillance", "insect", "doll", "clown"],
+        "vibes": ["cringe", "meme", "analog_horror", "real_life", "3d_gamey"],
+        "context": ["parents", "job_like", "phone_ui", "webcam_like"],
+        "safety": ["no-strobe", "no-gore", "no-spider", "no-kid"]
+    },
+
+    "safety": {
+        "deafultOptOuts": [],
+        "contentWarnings": [],
+        "ageGate": true
+    },
+
+    "backgrounds": [
+        { "id": "bg_cloudy_01", "path": "assets/backgrounds/cloudy-0.1.webp" },
+        { "id": "bg_cloudy_02", "path": "assets/backgrounds/cloudy-0.2.webp" }
+    ],
+
+    "fonts": [
+        { "id": "font_spooky_serif", "path": "assets/fonts/SpookySerif-Regular.woff2", "license": "see docs/right.md" }
+    ],
+
+    "sfx": [
+        { "id": "sfx_bass_rumble", "path": "assets/sfx/bass_rumble_v1.mp3", "lufs": -14 }
+    ],
+
+    "cues": [
+        { "id": "cue_ui_tick", "path": "assets/cues/ui_tick_v1.mp3" }
+    ],
+
+    "scares": [
+        {
+            "id": "movies_it_clown_v1",
+            "title": "Red Balloon Hallway",
+            "category": "movies",
+            "intensity": 7,
+            "tags": ["visual_jump", "clown"],
+            "safetyFlags": ["no-gore"],
+            "media": {
+                "poster": "assets/movies/it_the_clown/poster/it_poster.webp",
+                "jump": "assets/movies/it_poster/jumps/it_jump_v1.mp4"
+            },
+            "contentWarnings": ["suddent loud sound", "clown"],
+            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
+        },
+        {
+            "id": "analog_local58_static_v1",
+            "title": "Signal Lost Crawl",
+            "category": "analog",
+            "intensity": 5,
+            "tags": ["analog_horror", "glitch", "tension_slow"],
+            "safetyFlags": ["no-strobe"],
+            "media": {
+                "poster": "assets/analog/local58/poster/local58.webp",
+                "jump": "assets/analog/local58/jumps/static_crawl_v1.mp4"
+            },
+            "contentWarnings": ["gltich effects"],
+            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
+        },
+        {
+            "id": "games_silent_hill_siren_v1",
+            "title": "Air Raid Siren Dread",
+            "category": "games",
+            "intensity": 6,
+            "tags": ["tension_slow", "audio_jump"],
+            "safetyFlags": [],
+            "media": {
+                "poster": "assets/games/silent_hill/poster/siren.webp",
+                "jump": "assets/games/silent_hill/jumps/siren_loop_v1.mp4",
+                "audio": "assets/sfx/bass_rumble_v1.mp3"
+            },
+            "contentWarnings": ["loud sustained sound"],
+            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
+        },
+        {
+            "id": "random_job_popup_v1",
+            "title": "Job Application Popup",
+            "category": "random",
+            "intensity": 4,
+            "tags": ["real_life", "job_like", "surveillance"],
+            "safetyFlags": [],
+            "media": {
+                "poster": "assets/random/job/poster/popup.webp",
+                "jump": "assets/random/job/jumps/job_popup_v1.mp4"
+            },
+            "contentWarnings": ["sudden UI takeover"],
+            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
+        },
+        {
+            "id": "random_dark_eyes_peek_v1",
+            "title": "Eyes in the dark",
+            "category": "ramdom",
+            "intensity": 5,
+            "tags": ["dark_eyes", "tension_slow", "visual_jump"],
+            "safetyFlags": [],
+            "media": {
+                "poster": "assets/random/eyes/eye_peek_v1.webp",
+                "jump": "assets/sfx/bass_rumble_v1.mp3"
+            },
+            "contentWarnings": ["darkness"],
+            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
+        },
+        {
+            "id": "analog_webcam_glitch_v1",
+            "title": "Webcam Glitch Visitor",
+            "category": "analog",
+            "intensity": 6,
+            "tags": ["glitch", "webcam_like", "surveillance", "visual_jump"],
+            "safetyFlags": ["no-strobe"],
+            "media": {
+                "poster": "assets/anallog/webcam/jumps/glitch_visitor_v1.mp4",
+                "jump": "assets/analog/webcam/poster/webcam.webp"
+            },
+            "contentWarnings": ["gltich effects"],
+            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
+        }        
+    ],
+
+    "questions": [
+        { "id": "q_noise_startle", "text": "Do sudden loud noises unsettle you?", "theme": "audio" },
+        { "id": "q_dark_eyes", "text": "Do glowing eyes in the dark creep you out?", "theme": "visual" },
+        { "id": "q_glitch", "text": "Do glitchy screen effects make you uneasy?", "theme": "visual" },
+        { "id": "q_mirror", "text": "Do mirrors in dim rooms make you nervous?", "theme": "visual" },
+        { "id": "q_surveillance", "text": "Does the feeling of being watched disturb you?", "theme": "content" },
+        { "id": "q_cringe", "text": "Does cringe or awkward humor make you uncomfortable?", "theme": "content" },
+        { "id": "q_tension_vs_jump", "text": "Do you prefer slow-building dread over quick jump scares?", "theme": "pacing" },
+        { "id": "q_real_life", "text": "Do realistic, everyday-life scares hit harder for you?", "theme": "content" }
+    ],
+
+  "likelihoods": [
+    { "scareId": "movies_it_clown_v1", "questionId": "q_noise_startle", "p_yes": 0.65, "p_prob_yes": 0.20, "p_unknown": 0.05, "p_prob_no": 0.06, "p_no": 0.04 },
+    { "scareId": "movies_it_clown_v1", "questionId": "q_dark_eyes", "p_yes": 0.40, "p_prob_yes": 0.30, "p_unknown": 0.10, "p_prob_no": 0.10, "p_no": 0.10 },
+    { "scareId": "movies_it_clown_v1", "questionId": "q_tension_vs_jump", "p_yes": 0.30, "p_prob_yes": 0.30, "p_unknown": 0.20, "p_prob_no": 0.10, "p_no": 0.10 },
+    { "scareId": "movies_it_clown_v1", "questionId": "q_surveillance", "p_yes": 0.20, "p_prob_yes": 0.25, "p_unknown": 0.30, "p_prob_no": 0.15, "p_no": 0.10 },
+
+    { "scareId": "analog_local58_static_v1", "questionId": "q_glitch", "p_yes": 0.60, "p_prob_yes": 0.25, "p_unknown": 0.05, "p_prob_no": 0.05, "p_no": 0.05 },
+    { "scareId": "analog_local58_static_v1", "questionId": "q_tension_vs_jump", "p_yes": 0.70, "p_prob_yes": 0.15, "p_unknown": 0.05, "p_prob_no": 0.05, "p_no": 0.05 },
+    { "scareId": "analog_local58_static_v1", "questionId": "q_noise_startle", "p_yes": 0.30, "p_prob_yes": 0.30, "p_unknown": 0.20, "p_prob_no": 0.10, "p_no": 0.10 },
+    { "scareId": "analog_local58_static_v1", "questionId": "q_surveillance", "p_yes": 0.35, "p_prob_yes": 0.25, "p_unknown": 0.20, "p_prob_no": 0.10, "p_no": 0.10 },
+
+    { "scareId": "games_silent_hill_siren_v1", "questionId": "q_noise_startle", "p_yes": 0.55, "p_prob_yes": 0.25, "p_unknown": 0.10, "p_prob_no": 0.05, "p_no": 0.05 },
+    { "scareId": "games_silent_hill_siren_v1", "questionId": "q_tension_vs_jump", "p_yes": 0.65, "p_prob_yes": 0.20, "p_unknown": 0.05, "p_prob_no": 0.05, "p_no": 0.05 },
+    { "scareId": "games_silent_hill_siren_v1", "questionId": "q_glitch", "p_yes": 0.25, "p_prob_yes": 0.25, "p_unknown": 0.25, "p_prob_no": 0.15, "p_no": 0.10 },
+    { "scareId": "games_silent_hill_siren_v1", "questionId": "q_real_life", "p_yes": 0.20, "p_prob_yes": 0.25, "p_unknown": 0.25, "p_prob_no": 0.15, "p_no": 0.15 },
+
+    { "scareId": "random_job_popup_v1", "questionId": "q_real_life", "p_yes": 0.60, "p_prob_yes": 0.20, "p_unknown": 0.10, "p_prob_no": 0.05, "p_no": 0.05 },
+    { "scareId": "random_job_popup_v1", "questionId": "q_surveillance", "p_yes": 0.55, "p_prob_yes": 0.25, "p_unknown": 0.10, "p_prob_no": 0.05, "p_no": 0.05 },
+    { "scareId": "random_job_popup_v1", "questionId": "q_noise_startle", "p_yes": 0.35, "p_prob_yes": 0.30, "p_unknown": 0.15, "p_prob_no": 0.10, "p_no": 0.10 },
+    { "scareId": "random_job_popup_v1", "questionId": "q_cringe", "p_yes": 0.25, "p_prob_yes": 0.25, "p_unknown": 0.25, "p_prob_no": 0.15, "p_no": 0.10 },
+
+    { "scareId": "random_dark_eyes_peek_v1", "questionId": "q_dark_eyes", "p_yes": 0.75, "p_prob_yes": 0.15, "p_unknown": 0.05, "p_prob_no": 0.03, "p_no": 0.02 },
+    { "scareId": "random_dark_eyes_peek_v1", "questionId": "q_tension_vs_jump", "p_yes": 0.55, "p_prob_yes": 0.25, "p_unknown": 0.10, "p_prob_no": 0.05, "p_no": 0.05 },
+    { "scareId": "random_dark_eyes_peek_v1", "questionId": "q_noise_startle", "p_yes": 0.30, "p_prob_yes": 0.30, "p_unknown": 0.20, "p_prob_no": 0.10, "p_no": 0.10 },
+    { "scareId": "random_dark_eyes_peek_v1", "questionId": "q_mirror", "p_yes": 0.35, "p_prob_yes": 0.25, "p_unknown": 0.20, "p_prob_no": 0.10, "p_no": 0.10 },
+
+    { "scareId": "analog_webcam_glitch_v1", "questionId": "q_glitch", "p_yes": 0.70, "p_prob_yes": 0.20, "p_unknown": 0.03, "p_prob_no": 0.04, "p_no": 0.03 },
+    { "scareId": "analog_webcam_glitch_v1", "questionId": "q_surveillance", "p_yes": 0.65, "p_prob_yes": 0.20, "p_unknown": 0.05, "p_prob_no": 0.05, "p_no": 0.05 },
+    { "scareId": "analog_webcam_glitch_v1", "questionId": "q_noise_startle", "p_yes": 0.45, "p_prob_yes": 0.25, "p_unknown": 0.15, "p_prob_no": 0.08, "p_no": 0.07 },
+    { "scareId": "analog_webcam_glitch_v1", "questionId": "q_real_life", "p_yes": 0.55, "p_prob_yes": 0.20, "p_unknown": 0.10, "p_prob_no": 0.08, "p_no": 0.07 }
+  ],
+
+    "cadence": {
+        "pattern": ["question", "question", "probe"],
+        "probeTag": "micro-probe",
+        "probeRatingScale": [1, 10],
+        "diversityBias": 0.15
+    },
+
+    "thresholds": {
+        "guessProbability": 0.82,
+        "maxSteps": 12
+    }
+}
