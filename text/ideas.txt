@@ -4,16 +4,12 @@ scare them
 
 MAKE THE AKINATOR BUT BE AN ORHPEOUS VERSION INSTEAD
 
-not sure about the language tho tbh 
-
 FIND OUT HOW AKINATOR WORKS
     not sure what kinda databses it uses...
     I mean gpt is saying that it uses a belief system that works based on a percentage
 
 Typescript + react for ui
 typescript for backend
-LETS DO THIS 
-
 
 Current scare json setup copy+paste:
 
@@ -31,3 +27,24 @@ Current scare json setup copy+paste:
             "contentWarnings": ["", ""],
             "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
         },
+
+id = name for the thingy for backend
+title = what the user will see when they encounter it
+category = containers like movies, games, etc 
+intentisy = how scary the scene is (ON MY BASIS)
+tags = discriptors to trigger certain options as on 
+media: file path
+    jump = main mp4 
+    image = if jumpscare is an image
+    audio = extra audio i may add if its an img
+
+    MAYBE:  poster = preview of each scare(think yt thumbnail) 
+
+maybe implement(if i have time)
+safetyFlags = just in case they have a thing where they cant see flashing lights
+    FOR NOW JUST PUT A WARNING FOR THE FIRST PAGE YOU SEE WHERE THE USER HAS TO CONFIRM YES
+
+contentWarnings = y'know like just in case
+    ALSO ADD IT INTO THE FIRST PAGE
+rights = licensing stuff
+    honestly if i do add add this ill do it eventually 

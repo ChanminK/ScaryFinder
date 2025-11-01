@@ -4,28 +4,32 @@ Either ask a question or show a jumpscare unexpectedly
 
 Meters:
     Scarey Meter
-        based on how easily they are scared by each jumpscare they are exposed to 
-        ask a question(look at stuff below) 
-        or a random jumpscare is provided
-            then ask on scale 1-10 on how scared they were
-        random questions to make them think it does smth
+        based on how scared they are because of a jumpscare 
+        after showing one ask on scale 1-10 on how scared they were
 
-Scared decisions:
-    real life - more likely for job jumpscare 
-    3d - more likely for main horror games 
-    parents - more chance for one labeled parent SCARES
-    cringe - more likely for cringe / anime 
-    movie - more movie jumpscares
-    k-pop - kpop jumpscare(i have no idea how to do tho)
-    cat - just random cat thing
-    dog -
-    furry - 
-    girls - either dokidoki or smth else 
-    youtuber - likely to show youtuber jumpscares 
-    zach latta scare(from the zach site idk where exactly it is)
-    analog - analog horror thingy
+Questions (format of are you scared of: ):
+    real life - more likely for real life tag 
+    3d - more likly for 3d tag 
+    parents - more chance for one tagged parent 
+    cringe - more likely for cringe tag 
+    movie - more movie tags 
+    k-pop - more likely for cring + real life tag 
+    cat - likely for animal tag 
+    dog - likely for animal tag 
+    furry - cringe tag + animal tag 
+    girls - real life + girl tag  
+    vtuber - girl tag + cringe tag 
+    youtuber - youtuber tag  
+    zach latta - real life + zach latta tag 
+    analog - analog tag 
+
+ANSWER YES OR NO ONLY 
+
+Also random questions to screw with them(it does nothing):
+    whats your favorite color
+    
 
 Final Scare:
-    The final scare that orhpeous decides will sacre you best
+    The final scare that orhpeous decides will scare you best
     give you a button to press that changes the screen to black and then displays the scare after a random number of time 5-10 sec
 

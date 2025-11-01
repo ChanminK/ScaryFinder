@@ -1,62 +1,61 @@
-Stuff to find(all in mp4/png):
+File structure should be main thing(folder) and subthing inside
 
-Style:
-    a creepy/spooky text font?
-    NOTHING THAT LOOKS AIIIIIIIIIIIIIII
-    also some masic js animations
+style:
+    a creepy/spooky text font(s)
+    also some basic js animations
     maybe like that anime site i forgor name
 
-BACKGROUND:
-    A background, maybe like a cloudy thingy 
+background:
+    spooky halloween theme 
     multiple different background that can be cycled through
 
-SCARES(Find in png or mp4):
+scares:
 
-FNAF:
+fnaf:
     Freddy fazebear
-    Chika - please no ishowspeed moments pls
+    Chika
+    BONNIE
     MAP BOT
-    sun & moon
 
-Roblox DOORS
+doors:
     The thing with no eye
-    the thing where you have to look at it 
+    little eye gremlins 
     rush 
 
-Anime:
-    mad in abyss
-    cant rrly find anything(maybe a meme thingy)
-    yeah like something cringe
+anime:
+    made in abyss
+    chunniboy syndrome clip(for cringe)
 
-Moives:
-    here's johnny
+moives:
+    the shining - here's johnny 
     scream(white face guy)
-    jaws
-    a quiet place(both movie and game)
+    jaws - shark
+    a quiet place - clicker 
     it - the clown
     friday the 13th
     alien
     the exorcist III(or the others ones idk)
     MEGAN
+    train to busan
 
-TV Shows:
-    Doctor who
+tvshows:
+    Doctor who(fallen angels)
     The walking dead
-    stranger things
+    stranger things(demogorgan)
 
-SCP:
+scp:
     da one that doesnt want you lookin
-    plaluge doctor
+    plauge doctor
 
-Youtuber/online personas:
+youtuber:
     xqc becoming depressed
-    charlie slimescicle
+    charlie slimescicle moment
 
-Zach latta 
-    get from zach website from favorites(one of my accounts idk which one)
+zachlatta 
+    get from zach pics from that website
 
-GAMES:
-    amnesia
+games:
+    amnesia the bunker
     aline:isolation
     the last of us
     phasmophobia
@@ -66,31 +65,37 @@ GAMES:
     doki doki literature club
     baldi's basics
     slenderman
+    sirenhead
+    herobrine
+    subnautica
+    iron lung
+    hello neighbour
+    granny game
+    undertale(chara)
+    mouthwashing
 
-Analog:
+
+analog:
     local58tv
-    BACKROOMS
-    mandela ctalouge
+    BACKROOMS(plant monster thingy)
+    mandela catalouge
+    that greenman thing from game theory
 
-Random
+random:
     JOB - job application appears 
-    airsirenhead - i forgor name
-    minecraft herobrine
-    the one where you're in the submraine at the bottom of a blood river
-    hello heighbor
-    granny game 
-    6-7 jumpscare 
-    woman jumpscare
-    kpop jumpscare 
+    6-7 kud 
+    woman appears 
+    kpop singing(one of girl group, another of boys)
+    woman png 
     picture of a dog 
     picture of a cat 
     jeff the killer 
     momo challenge thing with da big eyes
-    pipbomb
-    steel pipe    
+    pipbomb mp4
+    steel pipe mp4
     spiderman ballon hits the camera
-    creepy eyes
-    mouthwashing
-    undertale flowey?
-
+    creepy eyes (like from yami card)
+    emergency siren/EOS system
+    random vtuber clip
+    furry - png?
 
