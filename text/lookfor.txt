@@ -12,14 +12,14 @@ background:
 scares:
 
 fnaf:
-    Freddy fazebear
+    freddy
     Chika
     BONNIE
     MAP BOT
 
 doors:
-    The thing with no eye
-    little eye gremlins 
+    eyes
+    figure 
     rush 
 
 anime:
@@ -29,12 +29,11 @@ anime:
 moives:
     the shining - here's johnny 
     scream(white face guy)
-    jaws - shark
-    a quiet place - clicker 
-    it - the clown
+    jaws
+    a quiet place
+    it
     friday the 13th
     alien
-    the exorcist III(or the others ones idk)
     MEGAN
     train to busan
 
@@ -44,7 +43,7 @@ tvshows:
     stranger things(demogorgan)
 
 scp:
-    da one that doesnt want you lookin
+    096
     plauge doctor
 
 youtuber:

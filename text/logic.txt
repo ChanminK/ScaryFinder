@@ -4,8 +4,8 @@ Either ask a question or show a jumpscare unexpectedly
 
 Meters:
     Scarey Meter
-        based on how scared they are because of a jumpscare 
-        after showing one ask on scale 1-10 on how scared they were
+        based on how scared they are because of a jumpscare. Have it so that the jumpscare will appear/play after 5-10 seconds of silence 
+        after showing one(unexpectedly) ask on scale 1-10 on how scared they were
 
 Questions (format of are you scared of: ):
     real life - more likely for real life tag 
@@ -27,7 +27,9 @@ ANSWER YES OR NO ONLY
 
 Also random questions to screw with them(it does nothing):
     whats your favorite color
-    
+    vanilla or chocolate ice cream
+    how many woods can a woodchuck chuck
+    and more 
 
 Final Scare:
     The final scare that orhpeous decides will scare you best

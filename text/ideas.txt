@@ -38,13 +38,14 @@ media: file path
     image = if jumpscare is an image
     audio = extra audio i may add if its an img
 
-    MAYBE:  poster = preview of each scare(think yt thumbnail) 
+MAYBE IMPLEMENT
 
-maybe implement(if i have time)
+    poster = preview of each scare(think yt thumbnail) 
+
 safetyFlags = just in case they have a thing where they cant see flashing lights
     FOR NOW JUST PUT A WARNING FOR THE FIRST PAGE YOU SEE WHERE THE USER HAS TO CONFIRM YES
 
 contentWarnings = y'know like just in case
     ALSO ADD IT INTO THE FIRST PAGE
 rights = licensing stuff
-    honestly if i do add add this ill do it eventually 
+    honestly if i do add add this ill do it eventually perhaps 
