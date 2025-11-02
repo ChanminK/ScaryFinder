@@ -2,4 +2,5 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './ui/App'
 
-createRoot(document.getElementById('root')!.render(<App />))
+const el = document.getElementById('root')!
+createRoot(el).render(<App />)

@@ -1,0 +1,9 @@
+Version history sucks
+
+Anyways heres some cmds to run stuff in case I forget
+
+Backend:
+pnpm -F @scaryfinder/api dev
+
+Frontend:
+pnpm -F @scaryfinder/web dev
