@@ -2,10 +2,6 @@ File structure should be main thing(folder) and something inside
 
 orhpeous.png (only one inside base assets)
 
-style(i'm not sure about this yet):
-    a creepy/spooky text font(s)
-    also some basic js animations(nvm too complicated)
-
 background:
     halloweenbackground.jpg
     blackscreen.jpg (for jumpscares)
@@ -41,7 +37,7 @@ anime:
     madeinabyss.mp4
         tags: 
         intensity: 9
-    chuunibyou.mp4
+    chuunibyou.gif
         tags: 
         intensity:
 
@@ -49,9 +45,6 @@ moives:
     theshining.mp4 (here's johnny) 
         tags: 
         intensity: 5
-    scream.mp4 (white face guy)
-        tags: 
-        intensity: 6
     jaws.mp4
         tags: 
         intensity: 7
@@ -67,9 +60,6 @@ moives:
     alien.mp4
         tags: 
         intensity: 8
-    megan.mp4
-        tags: 
-        intensity: 7
     traintobusan.mp4
         tags: 
         intensity: 7
@@ -112,9 +102,6 @@ zachlatta
         tags: 
         intensity: 10
     zach4.png
-        tags: 
-        intensity: 10
-    zach5.png
         tags: 
         intensity: 10
 
@@ -207,7 +194,7 @@ random:
     woman.png 
         tags: 
         intensity: 3
-    dog.pn 
+    dog.png 
         tags: 
         intensity: 3
     cat.png 
@@ -237,9 +224,6 @@ random:
     vtuber.mp4 (random vtuber clip)
         tags: 
         intensity: 3
-    furry.png
-        tags: 
-        intensity: 2
 
 do i really need both tag and category tho...
     nvm have catergory as the folder name and the tags be the specific name

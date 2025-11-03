@@ -1,30 +1,31 @@
 import { useEffect, useRef } from 'react';
 
-export function useInactivityJumpscare(opts: { onTrigger: () => void; minDelayMs?: number; maxDelayMs?: number }) {
-  const { onTrigger, minDelayMs = 5000, maxDelayMs = 10000 } = opts;
-  const t = useRef<number | null>(null);
+type Opts = {
+  minMs?: number;     
+  maxMs?: number;    
+  onTrigger: () => void;
+};
+
+export function useInactivityJumpscare({ minMs = 5000, maxMs = 10000, onTrigger }: Opts) {
+  const tRef = useRef<number | null>(null);
 
   const schedule = () => {
-    const wait = Math.floor(minDelayMs + Math.random() * (maxDelayMs - minDelayMs));
-    if (t.current) window.clearTimeout(t.current);
-    t.current = window.setTimeout(onTrigger, wait) as unknown as number;
+    clear();
+    const wait = Math.floor(minMs + Math.random() * (maxMs - minMs));
+    tRef.current = window.setTimeout(onTrigger, wait);
   };
 
-  const reset = () => schedule();
+  const clear = () => {
+    if (tRef.current != null) {
+      window.clearTimeout(tRef.current);
+      tRef.current = null;
+    }
+  };
 
   useEffect(() => {
     schedule();
-    const bump = () => reset();
-    window.addEventListener('mousemove', bump);
-    window.addEventListener('keydown', bump);
-    window.addEventListener('click', bump);
-    return () => {
-      if (t.current) window.clearTimeout(t.current);
-      window.removeEventListener('mousemove', bump);
-      window.removeEventListener('keydown', bump);
-      window.removeEventListener('click', bump);
-    };
+    return clear;
   }, []);
 
-  return { reset };
+  return { reset: schedule, cancel: clear };
 }

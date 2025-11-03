@@ -41,16 +41,14 @@
         { "id": "doors_rush_v1", "title": "Rush", "category": "doors", "intensity": 7, "tags": ["audio_jump","visual_jump"], "media": { "jump": "assets/doors/rush.mp4" } },
 
         { "id": "anime_madeinabyss_v1", "title": "Made in Abyss", "category": "anime", "intensity": 9, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/anime/madeinabyss.mp4" } },
-        { "id": "anime_chuunibyou_v1", "title": "Chuunibyou", "category": "anime", "intensity": 4, "tags": ["cringe","real_life"], "media": { "jump": "assets/anime/chuunibyou.mp4" } },
+        { "id": "anime_chuunibyou_v1", "title": "Chuunibyou", "category": "anime", "intensity": 4, "tags": ["cringe","real_life"], "media": { "image": "assets/anime/chuunibyou.gif" } },
 
         { "id": "movies_theshining_v1", "title": "The Shining (Here’s Johnny)", "category": "movies", "intensity": 5, "tags": ["visual_jump","real_life"], "media": { "jump": "assets/movies/theshining.mp4" } },
-        { "id": "movies_scream_v1", "title": "Scream (Ghostface)", "category": "movies", "intensity": 6, "tags": ["visual_jump"], "media": { "jump": "assets/movies/scream.mp4" } },
         { "id": "movies_jaws_v1", "title": "Jaws", "category": "movies", "intensity": 7, "tags": ["audio_jump","visual_jump"], "media": { "jump": "assets/movies/jaws.mp4" } },
         { "id": "movies_aquietplace_v1", "title": "A Quiet Place", "category": "movies", "intensity": 7, "tags": ["audio_jump","tension_slow"], "media": { "jump": "assets/movies/aquietplace.mp4" } },
         { "id": "movies_it_v1", "title": "IT (Clown)", "category": "movies", "intensity": 6, "tags": ["visual_jump","clown"], "media": { "jump": "assets/movies/it.mp4" } },
         { "id": "movies_fridaythe13th_v1", "title": "Friday the 13th", "category": "movies", "intensity": 6, "tags": ["visual_jump"], "media": { "jump": "assets/movies/fridaythe13th.mp4" } },
         { "id": "movies_alien_v1", "title": "Alien", "category": "movies", "intensity": 8, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/movies/alien.mp4" } },
-        { "id": "movies_megan_v1", "title": "M3GAN", "category": "movies", "intensity": 7, "tags": ["visual_jump","doll"], "media": { "jump": "assets/movies/megan.mp4" } },
         { "id": "movies_traintobusan_v1", "title": "Train to Busan", "category": "movies", "intensity": 7, "tags": ["visual_jump","real_life"], "media": { "jump": "assets/movies/traintobusan.mp4" } },
 
         { "id": "tv_doctorwho_angels_v1", "title": "Doctor Who (Weeping Angels)", "category": "tvshows", "intensity": 6, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/tvshows/doctorwho.mp4" } },
@@ -67,7 +65,6 @@
         { "id": "zachlatta_2_v1", "title": "Zach 2", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach2.png" } },
         { "id": "zachlatta_3_v1", "title": "Zach 3", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach3.png" } },
         { "id": "zachlatta_4_v1", "title": "Zach 4", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach4.png" } },
-        { "id": "zachlatta_5_v1", "title": "Zach 5", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach5.png" } },
 
         { "id": "games_amnesiathebunker_v1", "title": "Amnesia: The Bunker", "category": "games", "intensity": 9, "tags": ["tension_slow","audio_jump"], "media": { "jump": "assets/games/amnesiathebunker.mp4" } },
         { "id": "games_alienisolation_v1", "title": "Alien: Isolation", "category": "games", "intensity": 9, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/games/alienisolation.mp4" } },
@@ -102,13 +99,12 @@
         { "id": "random_cat_v1", "title": "Cat", "category": "random", "intensity": 3, "tags": ["real_life"], "media": { "image": "assets/random/cat.png" } },
         { "id": "random_jeffthekiller_v1", "title": "Jeff the Killer", "category": "random", "intensity": 6, "tags": ["visual_jump"], "media": { "image": "assets/random/jeffthekiller.png" } },
         { "id": "random_momochallenge_v1", "title": "Momo Challenge", "category": "random", "intensity": 9, "tags": ["visual_jump"], "media": { "image": "assets/random/momochallenge.png" } },
-        { "id": "random_pipebomb_v1", "title": "Pipe Bomb", "category": "random", "intensity": 4, "tags": ["meme"], "media": { "jump": "assets/random/pipbomb.mp4" } },
+        { "id": "random_pipebomb_v1", "title": "Pipe Bomb", "category": "random", "intensity": 4, "tags": ["meme"], "media": { "jump": "assets/random/pipebomb.mp4" } },
         { "id": "random_steelpipe_v1", "title": "Steel Pipe", "category": "random", "intensity": 4, "tags": ["meme"], "media": { "jump": "assets/random/steelpipe.mp4" } },
         { "id": "random_spidermanballoon_v1", "title": "Spider-Man Balloon Hit", "category": "random", "intensity": 2, "tags": ["meme","real_life"], "media": { "jump": "assets/random/spidermanballoon.mp4" } },
         { "id": "random_creepyeyes_v1", "title": "Creepy Eyes", "category": "random", "intensity": 5, "tags": ["dark_eyes","visual_jump"], "media": { "image": "assets/random/creepyeyes.png" } },
         { "id": "random_eos_v1", "title": "EOS", "category": "random", "intensity": 6, "tags": ["glitch","analog_horror"], "media": { "jump": "assets/random/EOS.mp4" } },
-        { "id": "random_vtuber_v1", "title": "VTuber Clip", "category": "random", "intensity": 3, "tags": ["cringe","real_life"], "media": { "jump": "assets/random/vtuber.mp4" } },
-        { "id": "random_furry_v1", "title": "Furry", "category": "random", "intensity": 2, "tags": ["cringe","meme"], "media": { "image": "assets/random/furry.png" } }
+        { "id": "random_vtuber_v1", "title": "VTuber Clip", "category": "random", "intensity": 3, "tags": ["cringe","real_life"], "media": { "jump": "assets/random/vtuber.mp4" } }
         
     ],
 
