@@ -1,6 +1,12 @@
 {
-  "buildCommand": "pnpm install --frozen-lockfile && pnpm -C apps/web build",
-  "outputDirectory": "apps/web/dist",
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/web/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
   "env": {
     "VITE_API_URL": "https://scaryfinder.onrender.com"
   }
