@@ -2,21 +2,14 @@
   "meta": {
     "name": "SCARYFINDER",
     "version": "0.1.0",
-    "defaultAnswerSet": ["Yes", "Probably", "Unknown", "ProbablyNot", "No"],
+    "defaultAnswerSet": ["Yes", "No"],
     "intensityRange": [1, 10]
     },
-
+    
     "tags": {
-        "modalities": ["audio_jump", "visual_jump", "tension_slow", "whisper", "dark_eyes", "mirror", "glitch", "surveillance", "insect", "doll", "clown"],
-        "vibes": ["cringe", "meme", "analog_horror", "real_life", "3d_gamey"],
-        "context": ["parents", "job_like", "phone_ui", "webcam_like"],
-        "safety": ["no-strobe", "no-gore", "no-spider", "no-kid"]
-    },
-
-    "safety": {
-        "deafultOptOuts": [],
-        "contentWarnings": [],
-        "ageGate": true
+        "modalities": ["audio_jump", "visual_jump", "tension_slow", "glitch", "surveillance", "dark_eyes", "mirror"],
+        "vibes": ["analog_horror", "real_life", "3d_gamey", "cringe"],
+        "context": ["parents", "job_like", "phone_ui", "webcam_like"]
     },
 
     "backgrounds": [
@@ -25,7 +18,7 @@
     ],
 
     "fonts": [
-        { "id": "font_spooky_serif", "path": "assets/fonts/SpookySerif-Regular.woff2", "license": "see docs/right.md" }
+        { "id": "font_spooky_serif", "path": "assets/fonts/SpookySerif-Regular.woff2" }
     ],
 
     "sfx": [
@@ -37,91 +30,86 @@
     ],
 
     "scares": [
-        {
-            "id": "movies_it_clown_v1",
-            "title": "Red Balloon Hallway",
-            "category": "movies",
-            "intensity": 7,
-            "tags": ["visual_jump", "clown"],
-            "safetyFlags": ["no-gore"],
-            "media": {
-                "poster": "assets/movies/it_the_clown/poster/it_poster.webp",
-                "jump": "assets/movies/it_poster/jumps/it_jump_v1.mp4"
-            },
-            "contentWarnings": ["suddent loud sound", "clown"],
-            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
-        },
-        {
-            "id": "analog_local58_static_v1",
-            "title": "Signal Lost Crawl",
-            "category": "analog",
-            "intensity": 5,
-            "tags": ["analog_horror", "glitch", "tension_slow"],
-            "safetyFlags": ["no-strobe"],
-            "media": {
-                "poster": "assets/analog/local58/poster/local58.webp",
-                "jump": "assets/analog/local58/jumps/static_crawl_v1.mp4"
-            },
-            "contentWarnings": ["gltich effects"],
-            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
-        },
-        {
-            "id": "games_silent_hill_siren_v1",
-            "title": "Air Raid Siren Dread",
-            "category": "games",
-            "intensity": 6,
-            "tags": ["tension_slow", "audio_jump"],
-            "safetyFlags": [],
-            "media": {
-                "poster": "assets/games/silent_hill/poster/siren.webp",
-                "jump": "assets/games/silent_hill/jumps/siren_loop_v1.mp4",
-                "audio": "assets/sfx/bass_rumble_v1.mp3"
-            },
-            "contentWarnings": ["loud sustained sound"],
-            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
-        },
-        {
-            "id": "random_job_popup_v1",
-            "title": "Job Application Popup",
-            "category": "random",
-            "intensity": 4,
-            "tags": ["real_life", "job_like", "surveillance"],
-            "safetyFlags": [],
-            "media": {
-                "poster": "assets/random/job/poster/popup.webp",
-                "jump": "assets/random/job/jumps/job_popup_v1.mp4"
-            },
-            "contentWarnings": ["sudden UI takeover"],
-            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
-        },
-        {
-            "id": "random_dark_eyes_peek_v1",
-            "title": "Eyes in the dark",
-            "category": "ramdom",
-            "intensity": 5,
-            "tags": ["dark_eyes", "tension_slow", "visual_jump"],
-            "safetyFlags": [],
-            "media": {
-                "poster": "assets/random/eyes/eye_peek_v1.webp",
-                "jump": "assets/sfx/bass_rumble_v1.mp3"
-            },
-            "contentWarnings": ["darkness"],
-            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
-        },
-        {
-            "id": "analog_webcam_glitch_v1",
-            "title": "Webcam Glitch Visitor",
-            "category": "analog",
-            "intensity": 6,
-            "tags": ["glitch", "webcam_like", "surveillance", "visual_jump"],
-            "safetyFlags": ["no-strobe"],
-            "media": {
-                "poster": "assets/anallog/webcam/jumps/glitch_visitor_v1.mp4",
-                "jump": "assets/analog/webcam/poster/webcam.webp"
-            },
-            "contentWarnings": ["gltich effects"],
-            "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
-        }        
+        { "id": "fnaf_freddy_v1", "title": "Freddy", "category": "fnaf", "intensity": 7, "tags": ["visual_jump","3d_gamey"], "media": { "jump": "assets/fnaf/freddy.mp4" } },
+        { "id": "fnaf_chika_v1", "title": "Chika", "category": "fnaf", "intensity": 7, "tags": ["visual_jump","3d_gamey"], "media": { "jump": "assets/fnaf/chika.mp4" } },
+        { "id": "fnaf_bonnie_v1", "title": "Bonnie", "category": "fnaf", "intensity": 7, "tags": ["visual_jump","3d_gamey"], "media": { "jump": "assets/fnaf/bonnie.mp4" } },
+        { "id": "fnaf_mapbot_v1", "title": "Map Bot", "category": "fnaf", "intensity": 5, "tags": ["visual_jump","3d_gamey","cringe"], "media": { "jump": "assets/fnaf/mapbot.mp4" } },
+
+
+        { "id": "doors_eyes_v1", "title": "Eyes", "category": "doors", "intensity": 5, "tags": ["visual_jump","dark_eyes"], "media": { "jump": "assets/doors/eyes.mp4" } },
+        { "id": "doors_figure_v1", "title": "Figure", "category": "doors", "intensity": 7, "tags": ["visual_jump","tension_slow"], "media": { "jump": "assets/doors/figure.mp4" } },
+        { "id": "doors_rush_v1", "title": "Rush", "category": "doors", "intensity": 7, "tags": ["audio_jump","visual_jump"], "media": { "jump": "assets/doors/rush.mp4" } },
+
+        { "id": "anime_madeinabyss_v1", "title": "Made in Abyss", "category": "anime", "intensity": 9, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/anime/madeinabyss.mp4" } },
+        { "id": "anime_chuunibyou_v1", "title": "Chuunibyou", "category": "anime", "intensity": 4, "tags": ["cringe","real_life"], "media": { "jump": "assets/anime/chuunibyou.mp4" } },
+
+        { "id": "movies_theshining_v1", "title": "The Shining (Here’s Johnny)", "category": "movies", "intensity": 5, "tags": ["visual_jump","real_life"], "media": { "jump": "assets/movies/theshining.mp4" } },
+        { "id": "movies_scream_v1", "title": "Scream (Ghostface)", "category": "movies", "intensity": 6, "tags": ["visual_jump"], "media": { "jump": "assets/movies/scream.mp4" } },
+        { "id": "movies_jaws_v1", "title": "Jaws", "category": "movies", "intensity": 7, "tags": ["audio_jump","visual_jump"], "media": { "jump": "assets/movies/jaws.mp4" } },
+        { "id": "movies_aquietplace_v1", "title": "A Quiet Place", "category": "movies", "intensity": 7, "tags": ["audio_jump","tension_slow"], "media": { "jump": "assets/movies/aquietplace.mp4" } },
+        { "id": "movies_it_v1", "title": "IT (Clown)", "category": "movies", "intensity": 6, "tags": ["visual_jump","clown"], "media": { "jump": "assets/movies/it.mp4" } },
+        { "id": "movies_fridaythe13th_v1", "title": "Friday the 13th", "category": "movies", "intensity": 6, "tags": ["visual_jump"], "media": { "jump": "assets/movies/fridaythe13th.mp4" } },
+        { "id": "movies_alien_v1", "title": "Alien", "category": "movies", "intensity": 8, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/movies/alien.mp4" } },
+        { "id": "movies_megan_v1", "title": "M3GAN", "category": "movies", "intensity": 7, "tags": ["visual_jump","doll"], "media": { "jump": "assets/movies/megan.mp4" } },
+        { "id": "movies_traintobusan_v1", "title": "Train to Busan", "category": "movies", "intensity": 7, "tags": ["visual_jump","real_life"], "media": { "jump": "assets/movies/traintobusan.mp4" } },
+
+        { "id": "tv_doctorwho_angels_v1", "title": "Doctor Who (Weeping Angels)", "category": "tvshows", "intensity": 6, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/tvshows/doctorwho.mp4" } },
+        { "id": "tv_thewalkingdead_v1", "title": "The Walking Dead", "category": "tvshows", "intensity": 7, "tags": ["visual_jump"], "media": { "jump": "assets/tvshows/thewalkingdead.mp4" } },
+        { "id": "tv_strangerthings_v1", "title": "Stranger Things (Demogorgon)", "category": "tvshows", "intensity": 8, "tags": ["visual_jump","tension_slow"], "media": { "jump": "assets/tvshows/strangerthings.mp4" } },
+
+        { "id": "scp_096_v1", "title": "SCP-096", "category": "scp", "intensity": 9, "tags": ["visual_jump","audio_jump"], "media": { "jump": "assets/scp/096.mp4" } },
+        { "id": "scp_plaguedoctor_v1", "title": "SCP Plague Doctor", "category": "scp", "intensity": 6, "tags": ["visual_jump","tension_slow"], "media": { "jump": "assets/scp/plaugedoctor.mp4" } },
+
+        { "id": "youtuber_xqc_v1", "title": "xQc (Depressed Clip)", "category": "youtuber", "intensity": 5, "tags": ["real_life","cringe"], "media": { "jump": "assets/youtuber/xqc.mp4" } },
+        { "id": "youtuber_slimescicle_v1", "title": "Slimescicle (Moment)", "category": "youtuber", "intensity": 10, "tags": ["cringe","real_life"], "media": { "jump": "assets/youtuber/slimescicle.mp4" } },
+
+        { "id": "zachlatta_1_v1", "title": "Zach 1", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach1.png" } },
+        { "id": "zachlatta_2_v1", "title": "Zach 2", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach2.png" } },
+        { "id": "zachlatta_3_v1", "title": "Zach 3", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach3.png" } },
+        { "id": "zachlatta_4_v1", "title": "Zach 4", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach4.png" } },
+        { "id": "zachlatta_5_v1", "title": "Zach 5", "category": "zachlatta", "intensity": 10, "tags": ["real_life","meme"], "media": { "image": "assets/zachlatta/zach5.png" } },
+
+        { "id": "games_amnesiathebunker_v1", "title": "Amnesia: The Bunker", "category": "games", "intensity": 9, "tags": ["tension_slow","audio_jump"], "media": { "jump": "assets/games/amnesiathebunker.mp4" } },
+        { "id": "games_alienisolation_v1", "title": "Alien: Isolation", "category": "games", "intensity": 9, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/games/alienisolation.mp4" } },
+        { "id": "games_thelastofus_v1", "title": "The Last of Us", "category": "games", "intensity": 9, "tags": ["tension_slow","visual_jump"], "media": { "jump": "assets/games/thelastofus.mp4" } },
+        { "id": "games_phasmophobia_v1", "title": "Phasmophobia", "category": "games", "intensity": 7, "tags": ["audio_jump","visual_jump"], "media": { "jump": "assets/games/phasmophobia.mp4" } },
+        { "id": "games_silenthill_v1", "title": "Silent Hill", "category": "games", "intensity": 7, "tags": ["tension_slow","audio_jump"], "media": { "jump": "assets/games/silenthill.mp4" } },
+        { "id": "games_deadspace_v1", "title": "Dead Space", "category": "games", "intensity": 8, "tags": ["visual_jump","audio_jump"], "media": { "jump": "assets/games/deadspace.mp4" } },
+        { "id": "games_residentevil4_v1", "title": "Resident Evil 4", "category": "games", "intensity": 7, "tags": ["visual_jump"], "media": { "jump": "assets/games/residentevil4.mp4" } },
+        { "id": "games_ddlc_v1", "title": "Doki Doki Literature Club", "category": "games", "intensity": 6, "tags": ["visual_jump","cringe"], "media": { "jump": "assets/games/ddlc.mp4" } },
+        { "id": "games_baldi_v1", "title": "Baldi’s Basics", "category": "games", "intensity": 6, "tags": ["visual_jump","cringe"], "media": { "jump": "assets/games/baldi.mp4" } },
+        { "id": "games_slenderman_v1", "title": "Slenderman", "category": "games", "intensity": 6, "tags": ["glitch","tension_slow","visual_jump"], "media": { "jump": "assets/games/slenderman.mp4" } },
+        { "id": "games_sirenhead_v1", "title": "Siren Head", "category": "games", "intensity": 7, "tags": ["audio_jump","tension_slow"], "media": { "jump": "assets/games/sirenhead.mp4" } },
+        { "id": "games_herobrine_v1", "title": "Herobrine", "category": "games", "intensity": 5, "tags": ["visual_jump","3d_gamey"], "media": { "jump": "assets/games/herobrine.mp4" } },
+        { "id": "games_subnautica_v1", "title": "Subnautica", "category": "games", "intensity": 5, "tags": ["tension_slow","audio_jump"], "media": { "jump": "assets/games/subnautica.mp4" } },
+        { "id": "games_ironlung_v1", "title": "Iron Lung (End Scare)", "category": "games", "intensity": 9, "tags": ["audio_jump","tension_slow"], "media": { "jump": "assets/games/ironlung.mp4" } },
+        { "id": "games_helloneighbor_v1", "title": "Hello Neighbor", "category": "games", "intensity": 5, "tags": ["visual_jump","3d_gamey"], "media": { "jump": "assets/games/helloneighbor.mp4" } },
+        { "id": "games_granny_v1", "title": "Granny", "category": "games", "intensity": 6, "tags": ["visual_jump"], "media": { "jump": "assets/games/granny.mp4" } },
+        { "id": "games_undertale_chara_v1", "title": "Undertale (Chara)", "category": "games", "intensity": 7, "tags": ["audio_jump","visual_jump"], "media": { "jump": "assets/games/undertale.mp4" } },
+        { "id": "games_mouthwashing_v1", "title": "Mouth Washing", "category": "games", "intensity": 9, "tags": ["analog_horror","audio_jump"], "media": { "jump": "assets/games/mouthwashing.mp4" } },
+
+        { "id": "analog_local58tv_v1", "title": "Local 58 TV", "category": "analog", "intensity": 5, "tags": ["analog_horror","glitch","tension_slow"], "media": { "jump": "assets/analog/local58tv.mp4" } },
+        { "id": "analog_backrooms_v1", "title": "Backrooms (Plant Monster)", "category": "analog", "intensity": 7, "tags": ["analog_horror","tension_slow"], "media": { "jump": "assets/analog/backrooms.mp4" } },
+        { "id": "analog_mandelacatalogue_v1", "title": "Mandela Catalogue", "category": "analog", "intensity": 6, "tags": ["analog_horror","glitch"], "media": { "jump": "assets/analog/mandelacatalogue.mp4" } },
+        { "id": "analog_mall_greenman_v1", "title": "Mall (Green Man)", "category": "analog", "intensity": 7, "tags": ["analog_horror","visual_jump"], "media": { "jump": "assets/analog/mall.mp4" } },
+
+        { "id": "random_job_v1", "title": "Job Application", "category": "random", "intensity": 10, "tags": ["real_life","job_like","phone_ui","surveillance"], "media": { "image": "assets/random/job.png" } },
+        { "id": "random_67kid_v1", "title": "67 Kid", "category": "random", "intensity": 4, "tags": ["meme","real_life"], "media": { "jump": "assets/random/67kid.mp4" } },
+        { "id": "random_woman_v1", "title": "Woman", "category": "random", "intensity": 3, "tags": ["real_life"], "media": { "image": "assets/random/woman.png" } },
+        { "id": "random_girlkpop_v1", "title": "Girl K-Pop", "category": "random", "intensity": 3, "tags": ["real_life","cringe"], "media": { "jump": "assets/random/girlkpop.mp4" } },
+        { "id": "random_guykpop_v1", "title": "Guy K-Pop", "category": "random", "intensity": 3, "tags": ["real_life","cringe"], "media": { "jump": "assets/random/guykpop.mp4" } },
+        { "id": "random_dog_v1", "title": "Dog", "category": "random", "intensity": 3, "tags": ["real_life"], "media": { "image": "assets/random/dog.png" } },
+        { "id": "random_cat_v1", "title": "Cat", "category": "random", "intensity": 3, "tags": ["real_life"], "media": { "image": "assets/random/cat.png" } },
+        { "id": "random_jeffthekiller_v1", "title": "Jeff the Killer", "category": "random", "intensity": 6, "tags": ["visual_jump"], "media": { "image": "assets/random/jeffthekiller.png" } },
+        { "id": "random_momochallenge_v1", "title": "Momo Challenge", "category": "random", "intensity": 9, "tags": ["visual_jump"], "media": { "image": "assets/random/momochallenge.png" } },
+        { "id": "random_pipebomb_v1", "title": "Pipe Bomb", "category": "random", "intensity": 4, "tags": ["meme"], "media": { "jump": "assets/random/pipbomb.mp4" } },
+        { "id": "random_steelpipe_v1", "title": "Steel Pipe", "category": "random", "intensity": 4, "tags": ["meme"], "media": { "jump": "assets/random/steelpipe.mp4" } },
+        { "id": "random_spidermanballoon_v1", "title": "Spider-Man Balloon Hit", "category": "random", "intensity": 2, "tags": ["meme","real_life"], "media": { "jump": "assets/random/spidermanballoon.mp4" } },
+        { "id": "random_creepyeyes_v1", "title": "Creepy Eyes", "category": "random", "intensity": 5, "tags": ["dark_eyes","visual_jump"], "media": { "image": "assets/random/creepyeyes.png" } },
+        { "id": "random_eos_v1", "title": "EOS", "category": "random", "intensity": 6, "tags": ["glitch","analog_horror"], "media": { "jump": "assets/random/EOS.mp4" } },
+        { "id": "random_vtuber_v1", "title": "VTuber Clip", "category": "random", "intensity": 3, "tags": ["cringe","real_life"], "media": { "jump": "assets/random/vtuber.mp4" } },
+        { "id": "random_furry_v1", "title": "Furry", "category": "random", "intensity": 2, "tags": ["cringe","meme"], "media": { "image": "assets/random/furry.png" } }
+        
     ],
 
     "questions": [
@@ -132,7 +120,11 @@
         { "id": "q_surveillance", "text": "Does the feeling of being watched disturb you?", "theme": "content" },
         { "id": "q_cringe", "text": "Does cringe or awkward humor make you uncomfortable?", "theme": "content" },
         { "id": "q_tension_vs_jump", "text": "Do you prefer slow-building dread over quick jump scares?", "theme": "pacing" },
-        { "id": "q_real_life", "text": "Do realistic, everyday-life scares hit harder for you?", "theme": "content" }
+        { "id": "q_real_life", "text": "Do realistic, everyday-life scares hit harder for you?", "theme": "content" },
+        { "id": "x_color", "text": "What’s your favorite color?", "theme": "nonsense" },
+        { "id": "x_icecream", "text": "Vanilla or chocolate ice cream?", "theme": "nonsense" },
+        { "id": "x_woodchuck", "text": "How many wood would a woodchuck chuck?", "theme": "nonsense" }
+
     ],
 
   "likelihoods": [

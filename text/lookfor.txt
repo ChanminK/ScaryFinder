@@ -1,100 +1,251 @@
-File structure should be main thing(folder) and subthing inside
+File structure should be main thing(folder) and something inside
 
-style:
+orhpeous.png (only one inside base assets)
+
+style(i'm not sure about this yet):
     a creepy/spooky text font(s)
-    also some basic js animations
-    maybe like that anime site i forgor name
+    also some basic js animations(nvm too complicated)
 
 background:
-    spooky halloween theme 
-    multiple different background that can be cycled through
+    halloweenbackground.jpg
+    blackscreen.jpg (for jumpscares)
 
-scares:
+scare(all below are subfolders, use for jump. Subfolder is also the name of the category):
 
 fnaf:
-    freddy
-    Chika
-    BONNIE
-    MAP BOT
+    freddy.mp4
+        tags: 
+        intensity: 7
+    chika.mp4
+        tags: 
+        intensity: 7
+    bonnie.mp4
+        tags: 
+        intensity: 7
+    mapbot.mp4
+        tags: 
+        intensity: 5
 
 doors:
-    eyes
-    figure 
-    rush 
+    eyes.mp4
+        tags: 
+        intensity: 5
+    figure.mp4 
+        tags: 
+        intensity: 7
+    rush.mp4
+        tags: 
+        intensity: 7
 
 anime:
-    made in abyss
-    chunniboy syndrome clip(for cringe)
+    madeinabyss.mp4
+        tags: 
+        intensity: 9
+    chuunibyou.mp4
+        tags: 
+        intensity:
 
 moives:
-    the shining - here's johnny 
-    scream(white face guy)
-    jaws
-    a quiet place
-    it
-    friday the 13th
-    alien
-    MEGAN
-    train to busan
+    theshining.mp4 (here's johnny) 
+        tags: 
+        intensity: 5
+    scream.mp4 (white face guy)
+        tags: 
+        intensity: 6
+    jaws.mp4
+        tags: 
+        intensity: 7
+    aquietplace.mp4
+        tags: 
+        intensity: 7
+    it.mp4
+        tags: 
+        intensity: 6
+    fridaythe13th.mp4
+        tags: 
+        intensity: 6
+    alien.mp4
+        tags: 
+        intensity: 8
+    megan.mp4
+        tags: 
+        intensity: 7
+    traintobusan.mp4
+        tags: 
+        intensity: 7
 
 tvshows:
-    Doctor who(fallen angels)
-    The walking dead
-    stranger things(demogorgan)
+    doctorwho.mp4 (fallen angels)
+        tags: 
+        intensity: 6
+    thewalkingdead.mp4
+        tags: 
+        intensity:
+    strangerthings.mp4 (demogorgan)
+        tags: 
+        intensity: 8
 
 scp:
-    096
-    plauge doctor
+    096.mp4
+        tags: 
+        intensity: 9  
+    plaugedoctor.mp4
+        tags: 
+        intensity: 6
 
 youtuber:
-    xqc becoming depressed
-    charlie slimescicle moment
+    xqc.mp4 becoming depressed
+        tags: 
+        intensity: 5
+    slimescicle.mp4 moment
+        tags: 
+        intensity: 10
 
 zachlatta 
-    get from zach pics from that website
+    zach1.png
+        tags: 
+        intensity: 10
+    zach2.png
+        tags: 
+        intensity: 10
+    zach3.png
+        tags: 
+        intensity: 10
+    zach4.png
+        tags: 
+        intensity: 10
+    zach5.png
+        tags: 
+        intensity: 10
 
 games:
-    amnesia the bunker
-    aline:isolation
-    the last of us
-    phasmophobia
-    silent hill
-    dead space
-    resident eveil 4
-    doki doki literature club
-    baldi's basics
-    slenderman
-    sirenhead
-    herobrine
-    subnautica
-    iron lung
-    hello neighbour
-    granny game
-    undertale(chara)
-    mouthwashing
-
+    amnesiathebunker.mp4
+        tags: 
+        intensity: 9
+    alineisolation.mp4
+        tags: 
+        intensity: 9
+    thelastofus.mp4
+        tags: 
+        intensity: 9
+    phasmophobia.mp4
+        tags: 
+        intensity: 7
+    silenthill.mp4
+        tags: 
+        intensity: 7
+    deadspace.mp4
+        tags: 
+        intensity: 8
+    residentevil4.mp4
+        tags: 
+        intensity: 7
+    ddlc.mp4 (doki doki literature club)
+        tags: 
+        intensity: 6
+    baldi.mp4
+        tags: 
+        intensity: 6
+    slenderman.mp4
+        tags: 
+        intensity: 6
+    sirenhead.mp4
+        tags: 
+        intensity: 7
+    herobrine.mp4
+        tags: 
+        intensity: 5
+    subnautica.mp4
+        tags: 
+        intensity: 5
+    ironlung.mp4 (end scare)
+        tags: 
+        intensity: 9
+    helloneighbour.mp4
+        tags: 
+        intensity: 5
+    granny.mp4
+        tags: 
+        intensity: 6
+    undertale.mp4 (chara)
+        tags: 
+        intensity: 7
+    mouthwashing.mp4
+        tags: 
+        intensity: 9
 
 analog:
-    local58tv
-    BACKROOMS(plant monster thingy)
-    mandela catalouge
-    that greenman thing from game theory
+    local58tv.mp4
+        tags: 
+        intensity: 5
+    backrooms.mp4 (plant monster thingy)
+        tags: 
+        intensity: 7
+    mandelacatalouge.mp4
+        tags: 
+        intensity: 6
+    mall.mp4 (that greenman thing from game theory)
+        tags: 
+        intensity:7
 
 random:
-    JOB - job application appears 
-    6-7 kud 
-    woman appears 
-    kpop singing(one of girl group, another of boys)
-    woman png 
-    picture of a dog 
-    picture of a cat 
-    jeff the killer 
-    momo challenge thing with da big eyes
-    pipbomb mp4
-    steel pipe mp4
-    spiderman ballon hits the camera
-    creepy eyes (like from yami card)
-    emergency siren/EOS system
-    random vtuber clip
-    furry - png?
+    job.png (job application appears) 
+        tags: 
+        intensity: 10
+    67kid.mp4 
+        tags: 
+        intensity: 4
+    woman.png 
+        tags: 
+        intensity: 3
+    girlkpop.mp4
+        tags: 
+        intensity: 3
+    guykpop.mp4 
+        tags: 
+        intensity:3
+    woman.png 
+        tags: 
+        intensity: 3
+    dog.pn 
+        tags: 
+        intensity: 3
+    cat.png 
+        tags: 
+        intensity: 3
+    jeffthekiller.png 
+        tags: 
+        intensity: 6
+    momochallenge.png (thing with da big eyes)
+        tags: 
+        intensity: 9
+    pipbomb.mp4
+        tags: 
+        intensity: 4
+    steelpipe.mp4
+        tags: 
+        intensity: 4
+    spidermanballon.mp4 (spiderman ballon hits the camera)
+        tags: 
+        intensity: 2
+    creepyeyes.png (like from yami card)
+        tags: 
+        intensity: 5
+    EOS.mp4
+        tags: 
+        intensity: 6
+    vtuber.mp4 (random vtuber clip)
+        tags: 
+        intensity: 3
+    furry.png
+        tags: 
+        intensity: 2
 
+do i really need both tag and category tho...
+    nvm have catergory as the folder name and the tags be the specific name
+
+THIS IS GONNA HURT MAKING
+Can i use ai for this pwetty please 
+OKAY IM GONNA USE A BIT OF AI FOR THIS SO I DONT GO CRAZY FOR IT
+
+Tags gonna go crazy here 

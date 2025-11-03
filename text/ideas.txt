@@ -17,14 +17,12 @@ Current scare json setup copy+paste:
             "id": "",
             "title": "",
             "category": "",
-            "intensity": #,
+            "intensity": ,
             "tags": [""],
-            "safetyFlags": [""],
             "media": {
-                "poster": "assets/",
                 "jump": "assets/"
+                "png": "assets/"
             },
-            "contentWarnings": ["", ""],
             "rights": { "source": "local-prototype", "license": "prototype-only", "creator": "you" }
         },
 
