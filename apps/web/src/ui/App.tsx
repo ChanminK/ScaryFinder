@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:8787'
 
@@ -33,6 +33,9 @@ export default function App() {
     const [sessionId, setSessionId] = useState<string>("")
     const bgUrl = `${API}/static/assets/background/halloweenbackground.jpg`;
     const [probeScare, setProbeScare] = useState<Scare|null>(null);
+    const probeTimerRef = useRef<number | null>(null);
+    const retryTimerRef = useRef<number | null>(null);
+    const lastQuestionRef = useRef<string | null>(null);
 
     useEffect(() => {
       fetch(`${API}/manifest`)
@@ -50,31 +53,65 @@ export default function App() {
         setQuestion(data.question)
         setTop(data.top)
 
+        if (scares.length === 0) {
+          try {
+            const m = await fetch(`${API}/manifest`).then(r => r.json());
+            setScares(m?.manifest?.scares ?? []);
+          } catch { /* ignore */ }
+        }
+
       } catch (e: any) { setError(e?.message || 'failed to start') }
       finally { setLoading(false) }
     }
 
-    useEffect(() => {
-      if (!sessionId || !question) return;
+useEffect(() => {
+  if (!sessionId || !question) return;
 
-      const ready = scares.length > 0 && top.length > 0;
-      const delayMs =
-        Number((import.meta as any).env?.VITE_PROBE_DELAY_MS) ||
-        Math.floor(5000 + Math.random() * 5000); 
+  if (lastQuestionRef.current !== question.id) {
+    if (probeTimerRef.current) {
+      window.clearTimeout(probeTimerRef.current);
+      probeTimerRef.current = null;
+    }
+    if (retryTimerRef.current) {
+      window.clearTimeout(retryTimerRef.current);
+      retryTimerRef.current = null;
+    }
+    lastQuestionRef.current = question.id;
 
-      const t = window.setTimeout(() => {
-        if (!ready) return; 
-        const choice = pickFromTop(top, scares) || scares[Math.floor(Math.random() * scares.length)];
+    const delayMs =
+      Number((import.meta as any).env?.VITE_PROBE_DELAY_MS) ||
+      Math.floor(5000 + Math.random() * 5000); // 5–10s
+
+    probeTimerRef.current = window.setTimeout(function fire() {
+      const ready = scares.length > 0 && top.length > 0 && !!sessionId && !!question;
+      if (ready) {
+        const choice =
+          pickFromTop(top, scares) || scares[Math.floor(Math.random() * scares.length)];
         if (choice) setProbeScare(choice);
-      }, delayMs);
+        probeTimerRef.current = null;
+        return;
+      }
+      retryTimerRef.current = window.setTimeout(() => {
+        if (!question || lastQuestionRef.current !== question.id) {
+          retryTimerRef.current = null;
+          return;
+        }
+        (fire as any)(); 
+      }, 800);
+    }, delayMs);
+  }
 
-      return () => window.clearTimeout(t);
-    }, [
-      sessionId,
-      question?.id,
-      scares.length,        
-      top.length              
-    ]);
+  return () => {
+    if (!sessionId) {
+      if (probeTimerRef.current) window.clearTimeout(probeTimerRef.current);
+      if (retryTimerRef.current) window.clearTimeout(retryTimerRef.current);
+      probeTimerRef.current = null;
+      retryTimerRef.current = null;
+      lastQuestionRef.current = null;
+    }
+  };
+}, [sessionId, question?.id, scares.length, top.length]);
+
 
 
     async function submitProbe(rating: number | null) {
@@ -232,6 +269,41 @@ export default function App() {
             </button>
           </div>
       )}
+
+      {!sessionId && (
+        <div
+          style={{
+            marginTop: 24,
+            display: 'grid',
+            placeItems: 'center',
+            gap: 16,
+            padding: 24,
+            borderRadius: 12,
+            background: 'rgba(0,0,0,0.35)',
+            border: '1px solid rgba(255,255,255,0.15)'
+          }}
+        >
+          <img
+            src={`${API}/static/assets/orpheous.png`}
+            alt="Orpheus"
+            style={{ width: 220, height: 'auto' }}
+          />
+          <button
+            onClick={start}
+            disabled={loading}
+            style={{
+              padding: '10px 18px',
+              borderRadius: 10,
+              border: '1px solid rgba(255,255,255,0.2)',
+              background: 'rgba(255,255,255,0.1)',
+              color: 'white',
+              cursor: 'pointer'
+            }}
+          >
+            {loading ? 'Starting…' : 'Start'}
+          </button>
+        </div>
+    )}
 
         {sessionId && question && (
           <div
