@@ -249,6 +249,23 @@ useEffect(() => {
         <p style={{ color: '#ddd' }}>API: <code>{API}</code></p>
         {error && <p style={{ color: 'salmon' }}>Error: {error}</p>}
 
+      {sessionId && (
+        <div
+          style={{
+            marginTop: 12,
+            padding: '10px 12px',
+            borderRadius: 8,
+            background: 'rgba(255,165,0,0.12)',
+            border: '1px solid rgba(255,165,0,0.35)',
+            color: '#ffd28a',
+            fontSize: 14
+          }}
+        >
+          <strong>Heads up:</strong> Jumpscares aren’t firing reliably yet.
+          Try seeing some by clicking the “DEBUG: Force jumpscare” button below.
+        </div>
+    )}
+
         {sessionId && (
           <div style={{ marginTop: 8 }}>
             <button
