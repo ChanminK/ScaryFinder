@@ -1,12 +1,9 @@
 {
   "name": "scaryfinder",
   "private": true,
-  "workspaces": ["apps/*", "data"],
   "packageManager": "pnpm@9.12.3",
   "scripts": {
-    "dev": "concurrently -n API,WEB -c magenta,cyan \"pnpm --filter @scaryfinder/api dev\" \"pnpm --filter @scaryfinder/web dev\""
-  },
-  "devDependencies": {
-    "concurrently": "^9.0.0"
+    "build": "pnpm -C apps/web build",
+    "vercel-build": "pnpm -C apps/web build"
   }
 }
