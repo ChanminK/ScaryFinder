@@ -34,6 +34,13 @@ export default function App() {
     const bgUrl = `${API}/static/assets/background/halloweenbackground.jpg`;
     const [probeScare, setProbeScare] = useState<Scare|null>(null);
 
+    useEffect(() => {
+      fetch(`${API}/manifest`)
+        .then(r => r.json())
+        .then(d => setScares(d?.manifest?.scares ?? []))
+        .catch(() => {/* ignore */});
+    }, []);
+
     async function start() {
       setLoading(true); setError(null); setRec(null)
       try {
@@ -43,8 +50,6 @@ export default function App() {
         setQuestion(data.question)
         setTop(data.top)
 
-        const m = await fetch(`${API}/manifest`).then(r => r.json())
-        setScares(m?.manifest?.scares ?? [])
       } catch (e: any) { setError(e?.message || 'failed to start') }
       finally { setLoading(false) }
     }
@@ -52,14 +57,25 @@ export default function App() {
     useEffect(() => {
       if (!sessionId || !question) return;
 
-      const wait = Math.floor(5000 + Math.random() * 5000);
+      const ready = scares.length > 0 && top.length > 0;
+      const delayMs =
+        Number((import.meta as any).env?.VITE_PROBE_DELAY_MS) ||
+        Math.floor(5000 + Math.random() * 5000); 
+
       const t = window.setTimeout(() => {
-        const choice = pickFromTop(top, scares);
+        if (!ready) return; 
+        const choice = pickFromTop(top, scares) || scares[Math.floor(Math.random() * scares.length)];
         if (choice) setProbeScare(choice);
-      }, wait);
+      }, delayMs);
 
       return () => window.clearTimeout(t);
-    }, [sessionId, question?.id, JSON.stringify(top.map(t => t.scareId)), scares]);
+    }, [
+      sessionId,
+      question?.id,
+      scares.length,        
+      top.length              
+    ]);
+
 
     async function submitProbe(rating: number | null) {
       const s = probeScare;
@@ -139,7 +155,20 @@ export default function App() {
       <div style={{ display:'grid', placeItems:'center', padding:16 }} onClick={e=>e.stopPropagation()}>
         <div style={{ width:'min(900px,94vw)' }}>
           {imgSrc && <img src={imgSrc} alt={scare.title} style={{ width:'100%', borderRadius:12 }} />}
-          {vidSrc && <video src={vidSrc} style={{ width:'100%', borderRadius:12 }} playsInline autoPlay />}
+          {vidSrc && (
+            <video
+              src={vidSrc}
+              style={{ width:'100%', borderRadius:12 }}
+              playsInline
+              autoPlay
+              preload="auto"
+              muted
+              onLoadedMetadata={(e) => {
+                const v = e.currentTarget;
+                v.play().catch(() => { });
+              }}
+            />
+          )}
         </div>
       </div>
       <div
@@ -183,40 +212,26 @@ export default function App() {
         <p style={{ color: '#ddd' }}>API: <code>{API}</code></p>
         {error && <p style={{ color: 'salmon' }}>Error: {error}</p>}
 
-        {!sessionId && (
-          <div
-            style={{
-              marginTop: 24,
-              display: 'grid',
-              placeItems: 'center',
-              gap: 16,
-              padding: 24,
-              borderRadius: 12,
-              background: 'rgba(0,0,0,0.35)',
-              border: '1px solid rgba(255,255,255,0.15)'
-            }}
-          >
-            <img
-              src={`${API}/static/assets/orpheous.png`}
-              alt="Orpheus"
-              style={{ width: 220, height: 'auto' }}
-            />
+        {sessionId && (
+          <div style={{ marginTop: 8 }}>
             <button
-              onClick={start}
-              disabled={loading}
+              onClick={() => {
+                const choice = pickFromTop(top, scares) || scares[Math.floor(Math.random() * Math.max(1, scares.length))];
+                if (choice) setProbeScare(choice);
+              }}
               style={{
-                padding: '10px 18px',
-                borderRadius: 10,
+                padding: '6px 10px',
+                borderRadius: 8,
                 border: '1px solid rgba(255,255,255,0.2)',
-                background: 'rgba(255,255,255,0.1)',
+                background: 'rgba(255,255,255,0.08)',
                 color: 'white',
                 cursor: 'pointer'
               }}
             >
-              {loading ? 'Starting…' : 'Start'}
+              DEBUG: Force jumpscare
             </button>
           </div>
-        )}
+      )}
 
         {sessionId && question && (
           <div
